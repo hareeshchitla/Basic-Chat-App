@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +7,20 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <ul id="messages"></ul>
-  <form id="form" action="">
-    <input id="input" autocomplete="off" /><button>Send</button>
-  </form>
+  <div class="chat-container">
+    <div class="chat-header">
+      <span>WhatsApp Clone</span>
+    </div>
+    <div class="chat-messages">
+      <ul id="messages"></ul>
+    </div>
+    <div class="chat-input">
+      <form id="form" action="">
+        <input id="input" type="text" placeholder="Type a message..." />
+        <button type="submit"><i class="fa fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </div>
   <script src="/socket.io/socket.io.js"></script>
   <script src="script.js"></script>
 </body>
