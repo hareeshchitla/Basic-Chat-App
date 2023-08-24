@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server);
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3007;
 
 app.use(express.static(__dirname + '/public'));
 
