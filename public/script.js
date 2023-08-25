@@ -34,3 +34,15 @@ socket.on('chat message', (msg) => {
   li.innerHTML = msg; // Use innerHTML to render emojis
   document.getElementById('messages').appendChild(li);
 });
+
+// Function to show an alert popup
+function showAlert(message) {
+  const alertBox = document.createElement('div');
+  alertBox.className = 'alert';
+  alertBox.textContent = message;
+  document.body.appendChild(alertBox);
+
+  setTimeout(() => {
+    document.body.removeChild(alertBox);
+  }, 3000); // Remove alert after 3 seconds
+}
